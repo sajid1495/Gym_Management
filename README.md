@@ -1,19 +1,20 @@
 # Gym_Management
-This is a simple Gym Management Software.
-Here are some key features of this program:
 
-1. Add Member
-2. Update Member Info
-3. Remove Member
-4. All Member's Info
-5. One Member's info
-6. Max Height & Weight
-7. Min Height and Weight
-8. Average Height and Weight
-9. BMI Classification
-10. Exit
+This is a simple Gym Management Software written in C++. It provides various key features for managing a gym.
 
-This program is written in C++. It's so easy to use in the terminal.
-But the main problem is it can not save data for the future.
-That's why I am working on this project. I will use files to save data for the future.
-Coming something interesting on V_2.0!
+## Key Features
+
+- Add Member
+- Update Member Info
+- Remove Member
+- All Member's Info
+- One Member's info
+- Max Height & Weight
+- Min Height and Weight
+- Average Height and Weight
+- BMI Classification
+- Exit
+
+The program is designed to be user-friendly and can be easily used in the terminal. However, it currently lacks the capability to save data for future reference. In order to address this limitation, ongoing development is focused on implementing file handling to enable data persistence.
+
+Exciting updates are expected in V_2.0! Stay tuned for more information.
