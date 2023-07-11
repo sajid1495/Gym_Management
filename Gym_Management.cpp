@@ -75,24 +75,29 @@ void add(){
 
 void update(){
     cout << "Enter Member ID whome Info you want to Update : ";
-        int a;
-        cin >> a;
-        cout << "Which one you want to Update?\n";
-        cout << "1.Height\n";
-        cout << "2.Weight\n";
-        cout << "Enter Your Choice : ";
-        int q,b,c;
-        cin >> q;
-        if(q == 1){
-            cout << "Enter Member Height(cm) : ";
-            cin >> b;
-            mem[a].height = b;
-        }
-        else if(q == 2){
-            cout << "Enter Member Weight(kg) : ";
-            cin >> c;
-            mem[a].weight = c;
-        }
+    int a;
+    cin >> a;
+    cout << "Which one you want to Update?\n";
+    cout << "1.Height\n";
+    cout << "2.Weight\n";
+    cout << "Enter Your Choice : ";
+    int q,b,c;
+    cin >> q;
+    if(q == 1){
+        cout << "Enter Member Height(cm) : ";
+        cin >> b;
+        totalHeight -= mem[a].height;
+        mem[a].height = b;
+        totalHeight += b;
+    }
+    else if(q == 2){
+        cout << "Enter Member Weight(kg) : ";
+        cin >> c;
+        totalHeight -= mem[a].weight;
+        mem[a].weight = c;
+        totalHeight += c;
+    }
+
 }
 
 void bmi(){
