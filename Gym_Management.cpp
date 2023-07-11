@@ -93,9 +93,9 @@ void update(){
     else if(q == 2){
         cout << "Enter Member Weight(kg) : ";
         cin >> c;
-        totalHeight -= mem[a].weight;
+        totalWeight -= mem[a].weight;
         mem[a].weight = c;
-        totalHeight += c;
+        totalWeight += c;
     }
 
 }
@@ -262,7 +262,6 @@ int main(){
     else if(op == 8){
         int presentMem = i - delct;
         float avgH,avgW;
-        cout << totalHeight << " " << totalWeight << " " << presentMem << endl;
         avgH = (totalHeight*1.0)/presentMem;
         avgW = (totalWeight*1.0)/presentMem;
         cout << "\nAvarage Height & Avarage Weight : " << avgH << " & " << avgW << endl << endl;
