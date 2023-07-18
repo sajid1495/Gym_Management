@@ -106,8 +106,8 @@ void avg(){
     totalHeight = 0,totalWeight = 0;
     for(int j = 1001; j < i; j++){
         if(mem[j-1000].id != 0){
-            totalHeight += mem[j-1000].height;
-            totalWeight += mem[j-1000].weight;
+            totalHeight += mem[j - 1000].height;
+            totalWeight += mem[j - 1000].weight;
         }
     }
 }
@@ -119,13 +119,13 @@ void bmi(){
     float h=mem[x-1000].height*1.0/100.0;
     float bmi = mem[x-1000].weight*1.0/(h*h);
     if(bmi < 16){
-        cout << "\nBMI is " << bmi << " and Memeber " << x << " shows Severe Thinness.\n\n";
+        cout << "\nBMI is " << bmi << " and Member " << x << " shows Severe Thinness.\n\n";
     }
     else if(bmi >= 16 && bmi <= 17){
-        cout << "\nBMI is " << bmi << " and Memeber " << x << " shows Moderate Thinness.\n\n";
+        cout << "\nBMI is " << bmi << " and Member " << x << " shows Moderate Thinness.\n\n";
     }
     else if(bmi > 17 && bmi <= 18.5){
-        cout << "\nBMI is " << bmi << " and Memeber " << x << " shows Mild Thinness.\n\n";
+        cout << "\nBMI is " << bmi << " and Member " << x << " shows Mild Thinness.\n\n";
     }
     else if(bmi > 18.5 && bmi <= 25){
         cout << "\nCongratulations!\n";
@@ -188,7 +188,7 @@ int main(){
             cout << "Error Adding Data to File" << endl;
         }
         cout << "\nSuccessfully Added!" << endl;
-        cout << "Press C for Clear Screan.\n";
+        cout << "Press C for Clear Screen.\n";
         cout << "Press any other Key for Main Menu.......";
         getchar();
         char c = getchar();
@@ -233,7 +233,7 @@ int main(){
         }
 
         cout << "\nSuccessfully Updated!" << endl;
-        cout << "Press C for Clear Screan.\n";
+        cout << "Press C for Clear Screen.\n";
         cout << "Press any other Key for Main Menu.......";
         getchar();
         char c = getchar();
@@ -247,7 +247,7 @@ int main(){
         }
     }
     else if(op == 3){
-        cout << "Enter Member ID whome Info you want to Delet : ";
+        cout << "Enter Member ID whom Info you want to Delet : ";
         int x;
         cin >> x;
         mem[x-1000].id = 0;
@@ -281,7 +281,7 @@ int main(){
         }
         
         cout << "\nSuccessfully Removed!" << endl;
-        cout << "Press C for Clear Screan.\n";
+        cout << "Press C for Clear Screen.\n";
         cout << "Press any other Key for Main Menu.......";
         getchar();
         char c = getchar();
@@ -297,7 +297,7 @@ int main(){
     else if(op == 4){
         cout << "\n\n   Information Table.\n\n ID   H  W\n";
         showInfoAll();
-        cout << "Press C for Clear Screan.\n";
+        cout << "Press C for Clear Screen.\n";
         cout << "Press any other Key for Main Menu.......";
         getchar();
         char c = getchar();
@@ -316,7 +316,7 @@ int main(){
         cin >> x;
         cout << "\n\n   Information Table.\n\n ID   H  W\n";
         showInfoAlone(x);
-        cout << "Press C for Clear Screan.\n";
+        cout << "Press C for Clear Screen.\n";
         cout << "Press any other Key for Main Menu.......";
         getchar();
         char c = getchar();
@@ -332,7 +332,7 @@ int main(){
     else if(op == 6){
         maxmin();
         cout << "\nMax Height & Max Weight : " << maxHeight << " & " << maxWeight << endl << endl;
-        cout << "Press C for Clear Screan.\n";
+        cout << "Press C for Clear Screen.\n";
         cout << "Press any other Key for Main Menu.......";
         getchar();
         char c = getchar();
@@ -348,7 +348,7 @@ int main(){
     else if(op == 7){
         maxmin();
         cout << "\nMin Height & Min Weight : " << minHeight << " & " << minWeight << endl << endl;
-        cout << "Press C for Clear Screan.\n";
+        cout << "Press C for Clear Screen.\n";
         cout << "Press any other Key for Main Menu.......";
         getchar();
         char c = getchar();
@@ -367,8 +367,8 @@ int main(){
         float avgH,avgW;
         avgH = (totalHeight*1.0)/presentMem;
         avgW = (totalWeight*1.0)/presentMem;
-        cout << "\nAvarage Height & Avarage Weight : " << avgH << " & " << avgW << endl << endl;
-        cout << "Press C for Clear Screan.\n";
+        cout << "\nAverage Height & Average Weight : " << avgH << " & " << avgW << endl << endl;
+        cout << "Press C for Clear Screen.\n";
         cout << "Press any other Key for Main Menu.......";
         getchar();
         char c = getchar();
@@ -383,7 +383,7 @@ int main(){
     }
     else if(op == 9){
         bmi();
-        cout << "Press C for Clear Screan.\n";
+        cout << "Press C for Clear Screen.\n";
         cout << "Press any other Key for Main Menu.......";
         getchar();
         char c = getchar();
