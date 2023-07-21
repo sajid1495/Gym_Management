@@ -29,7 +29,7 @@ Please check this out.
 Thank's for giving your time here.   
 
 ## Update
-Version 2.0 is here.(Gym_Management_With_File(V-3.0))   
+Version 3.0 is here.(Gym_Management_With_File(V-3.0))   
 This Version is super cool.   
 It has a new data field called "Exist".     
 It determines if a member exists or not in the Gym without making any changes to his/her information.    
