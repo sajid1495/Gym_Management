@@ -311,7 +311,7 @@ int main(){
         }
     }
     else if(op == 5){
-        cout << "Inter ID of Member : ";
+        cout << "Enter ID of Member : ";
         int x;
         cin >> x;
         cout << "\n\n   Information Table.\n\n ID   H  W\n";
